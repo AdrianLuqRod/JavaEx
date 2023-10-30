@@ -1,0 +1,210 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PruebaCompara",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaCompara",
+            "projectName": "u2e42-compara_arrays"
+        },
+        {
+            "type": "java",
+            "name": "PruebaArrayPersonas",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaArrayPersonas",
+            "projectName": "u2e36-array_personas"
+        },
+        {
+            "type": "java",
+            "name": "PruebaEdades",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaEdades",
+            "projectName": "u2e14-persona_edades"
+        },
+        {
+            "type": "java",
+            "name": "PruebaArrays",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaArrays",
+            "projectName": "u2e35-arrays"
+        },
+        {
+            "type": "java",
+            "name": "PruebaDibujoTriangulo",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaDibujoTriangulo",
+            "projectName": "u2e34-triangulo_asteriscos"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "es.casa.Main",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "BuscaTrioMagico",
+            "request": "launch",
+            "mainClass": "es.casa.BuscaTrioMagico",
+            "projectName": "u2e33-trio_magico"
+        },
+        {
+            "type": "java",
+            "name": "RevientaCandado",
+            "request": "launch",
+            "mainClass": "es.casa.RevientaCandado",
+            "projectName": "u2e31-candado_numerico"
+        },
+        {
+            "type": "java",
+            "name": "PruebaDado",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaDado",
+            "projectName": "u2e29-dado"
+        },
+        {
+            "type": "java",
+            "name": "ParesDescendientes",
+            "request": "launch",
+            "mainClass": "es.casa.ParesDescendientes",
+            "projectName": "u2e28-pares_descendientes"
+        },
+        {
+            "type": "java",
+            "name": "PruebaTablaMulti",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaTablaMulti",
+            "projectName": "u2e26-tabla_multi"
+        },
+        {
+            "type": "java",
+            "name": "PruebaCuentaImpar",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaCuentaImpar",
+            "projectName": "u2e25-cuenta_impar"
+        },
+        {
+            "type": "java",
+            "name": "PruebaCuentaPar",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaCuentaPar",
+            "projectName": "u2e24-cuenta_par"
+        },
+        {
+            "type": "java",
+            "name": "PruebaCuentaDesc",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaCuentaDesc",
+            "projectName": "u2e23-cuenta_desc"
+        },
+        {
+            "type": "java",
+            "name": "PruebaCuentaAsc",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaCuentaAsc",
+            "projectName": "u2e22-cuenta_asc"
+        },
+        {
+            "type": "java",
+            "name": "PruebaBombillaMenu",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaBombillaMenu",
+            "projectName": "u2e21-bombilla_inteligente3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "es.casa.Main",
+            "projectName": "u2e20-prueba_menu_bucle"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "es.casa.Main",
+            "projectName": "u2e18-menu_lavadora"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "es.casa.Main",
+            "projectName": "u2e16-menu_potencias"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "es.casa.Main",
+            "projectName": "u2e15-rimas_numeros"
+        },
+        {
+            "type": "java",
+            "name": "PruebaBombillaCondicional2",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaBombillaCondicional2",
+            "projectName": "u2e13-bombilla_inteligente2"
+        },
+        {
+            "type": "java",
+            "name": "PruebaBombillaCondicional",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaBombillaCondicional",
+            "projectName": "u2e12-bombilla_inteligente"
+        },
+        {
+            "type": "java",
+            "name": "PruebaPersonaCondicionalDoble",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaPersonaCondicionalDoble",
+            "projectName": "u2e11-persona_condicional_doble"
+        },
+        {
+            "type": "java",
+            "name": "PruebaCasting",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaCasting",
+            "projectName": "u2e6-prueba_casting"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "es.casa.Main",
+            "projectName": "u2e17calculadora_teclado"
+        },
+        {
+            "type": "java",
+            "name": "PruebaValidaEntrada",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaValidaEntrada",
+            "projectName": "u2e19prueba_validez"
+        },
+        {
+            "type": "java",
+            "name": "PruebaMenu",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaMenu",
+            "projectName": "u2e1menu"
+        },
+        {
+            "type": "java",
+            "name": "PruebaPersonaCondicional",
+            "request": "launch",
+            "mainClass": "es.casa.PruebaPersonaCondicional",
+            "projectName": "u2e4personas_edades"
+        }
+    ]
+}
