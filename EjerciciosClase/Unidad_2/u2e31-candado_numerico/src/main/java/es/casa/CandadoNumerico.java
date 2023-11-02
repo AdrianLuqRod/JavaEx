@@ -8,6 +8,7 @@ public class CandadoNumerico {
     }
 
     public boolean seAbreCon(int numero) {
+        // return numero==numSecreto;
         if (numero == numSecreto) {
             return true;
         } else {
