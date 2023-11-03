@@ -32,9 +32,9 @@ public class RevientaCandado {
         } while (!acierto);
         // - Para establecer la contraseña como un número aleatorio en lugar de pedirla
         // - al usuario
-        // import java.util.Random;
-        // Random r = new Random();
-        // cn.setNumSecreto(r.nextInt(10000));
+        // . import java.util.Random;
+        // . Random r = new Random();
+        // . cn.setNumSecreto(r.nextInt(10000));
         sc.close();
     }
 }
