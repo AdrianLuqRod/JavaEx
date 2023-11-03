@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class PruebaDado {
     public static void main(String[] args) {
-
         boolean acierto = false;
         int adiv;
         Scanner sc = new Scanner(System.in);
