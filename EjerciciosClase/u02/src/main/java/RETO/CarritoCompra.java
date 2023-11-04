@@ -14,48 +14,50 @@ import e44.Articulo;
 // !!!!!!!!!!!PREGUNTAR MARIO
 // !!!!!!!!!!!PREGUNTAR MARIO
 public class CarritoCompra {
-    Articulo[] carrito = new Articulo[10];
+    Articulo[] articulos = new Articulo[10];
     // public Articulo[] creaArray() {
-    // Articulo[] carrito = new Articulo[10];
-    // return carrito;
+    // Articulo[] articulos = new Articulo[10];
+    // return articulos;
     // }
 
     public void guardarArticulo(Articulo art) {
-        for (int i = 0; i < carrito.length; i++) {
-            if (carrito[i] == null) {
-                carrito[i] = art;
+        for (int i = 0; i < articulos.length; i++) {
+            if (articulos[i] == null) {
+                articulos[i] = art;
                 break;
             }
-
         }
     }
 
     public void mostrarArticulos() {
-        for (int j = 0; j < carrito.length; j++) {
-            int cont = 0;
-            if (carrito[j] != null) {
-                System.out.println("Id = " + carrito[j].getIdArticulo() + ", nombre = " + carrito[j].getNombre()
-                        + ", precio = " + carrito[j].getPrecio() + "€");
-                cont++;
-            } else if (cont == 0) {
-                System.out.println("No hay articulos en el carrito");
+        boolean exist = false;
+        for (int j = 0; j < articulos.length; j++) {
+            if (articulos[j] != null) {
+                System.out.println("Id = " + articulos[j].getIdArticulo() + ", nombre = " + articulos[j].getNombre()
+                        + ", precio = " + articulos[j].getPrecio() + "€");
+                exist = true;
             }
+        }
+        if (!exist) {
+            System.out.println("No hay articulos en el articulos");
         }
     }
 
-    // public Articulo buscarArticuloPorId(int id) {
-    // boolean cond = false;
-    // for (Articulo elemCarrito : carrito) {
-    // if (elemCarrito.getIdArticulo() == id) {
-    // return elemCarrito;
-    // }
-    // }
+    public Articulo buscarArticuloPorId(int id) {
+        for (Articulo elemArticulos : articulos) {
+            if (elemArticulos != null && elemArticulos.getIdArticulo() == id) {
+                return elemArticulos;
+            }
+        }
+        return null;
+    }
 
-    // }
-    public double calcularPrecioTotalCarrito() {
+    public double calcularPrecioTotalarticulos() {
         double total = 0;
-        for (Articulo elemCarrito : carrito) {
-            total += elemCarrito.getPrecio();
+        for (Articulo elemArticulos : articulos) {
+            if (elemArticulos != null) {
+                total += elemArticulos.getPrecio();
+            }
         }
         return total;
     }

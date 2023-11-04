@@ -6,34 +6,17 @@ public class PruebaArticulo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean cond = false;
-        // !PREGUNTAR MARIO.
-        // !PREGUNTAR MARIO.
-        // !PREGUNTAR MARIO.
-        // !PREGUNTAR MARIO.
-        // !PREGUNTAR MARIO.
-        // !PREGUNTAR MARIO.
-        // !PREGUNTAR MARIO.
-        Articulo obj1 = new Articulo();
-        Articulo obj2 = new Articulo();
-        Articulo obj3 = new Articulo();
-        Articulo obj4 = new Articulo();
-        Articulo obj5 = new Articulo();
-        Articulo[] obj = { obj1, obj2, obj3, obj4, obj5 };
-        obj[0].setNombre("Pen");
-        obj[1].setNombre("Mouse");
-        obj[2].setNombre("Screen");
-        obj[3].setNombre("Bottle");
-        obj[4].setNombre("Fan");
-        obj[0].setIdArticulo(213);
-        obj[1].setIdArticulo(12);
-        obj[2].setIdArticulo(432);
-        obj[3].setIdArticulo(900);
-        obj[4].setIdArticulo(525);
-        obj[0].setPrecio(0.75);
-        obj[1].setPrecio(15.25);
-        obj[2].setPrecio(399.99);
-        obj[3].setPrecio(1.75);
-        obj[4].setPrecio(49.99);
+        Articulo[] obj = new Articulo[5];
+        String[] nom = { "Pen", "Mouse", "Screen", "Bottle", "Fan" };
+        int[] id = { 213, 12, 432, 900, 525 };
+        Double[] cost = { 0.75, 15.25, 399.99, 1.75, 49.99 };
+
+        for (int i = 0; i < obj.length; i++) {
+            obj[i] = new Articulo();
+            obj[i].setNombre(nom[i]);
+            obj[i].setIdArticulo(id[i]);
+            obj[i].setPrecio(cost[i]);
+        }
         System.out.printf("Write an item ID: ");
         int numId = sc.nextInt();
         sc.nextLine();
