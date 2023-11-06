@@ -10,6 +10,8 @@ public class e18 {
         // Apart4(5);
         // Apart5(5);
         // Apart6(5);
+        // Apart7(5);
+        Apart8(5);
         long endTime = System.nanoTime() - startTime;
         System.out.println("Tiempo: " + endTime);
 
@@ -101,17 +103,17 @@ public class e18 {
     }
 
     public static void Apart5(int input) {
-        // - ----*----
-        // - ---***---
-        // - --*****--
-        // - -*******-
-        // - *********
+        // - ----1----
+        // - ---222---
+        // - --33333--
+        // - -4444444-
+        // - 555555555
         for (int i = 0; i < input; i++) {
             for (int j = 0; j < input * 2 - 1; j++) {
                 if (j >= (input - 1 - i) && j <= (input - 1 + i))
                     System.out.printf(i + 1 + "");
                 else
-                    System.out.printf(" ");
+                    System.out.printf("-");
 
             }
             System.out.println();
@@ -141,4 +143,45 @@ public class e18 {
         }
     }
 
+    public static void Apart7(int input) {
+        // - 1010101
+        // - -10101-
+        // - --101--
+        // - ---1---
+
+    }
+
+    public static void Apart8(int input) {
+        // - --*--
+        // - -***-
+        // - *****
+        // - -***-
+        // - --*--
+        for (int i = 0; i < input; i++) {
+            if (i < (input / 2.0) + 0.5) {
+                for (int j = 0; j < input; j++) {
+                    if (j >= (((input / 2.0) + 0.5) - 1 - i) && j <= (((input / 2.0) + 0.5) - 1 + i)) {
+                        System.out.printf("*");
+                    } else {
+                        System.out.printf("-");
+                    }
+                }
+                System.out.println();
+            } else {
+                for (int j = 5; j > input; j--) {
+                    if ((input / 2.0) + 0.5) < j|| j >((input / 2.0) + 0.5)){
+                        System.out.printf("*");
+                    } else {
+                        System.out.printf("-");
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
 }
+
+// SI J <= i-centro || j >
+
+// i=3 j tiene que ser <=5 o >=5
+// i=4 j tiene que ser <=3 o >=3

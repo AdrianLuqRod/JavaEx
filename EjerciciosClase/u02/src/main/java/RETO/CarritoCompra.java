@@ -2,23 +2,12 @@ package RETO;
 
 import e44.Articulo;
 
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
 public class CarritoCompra {
-    Articulo[] articulos = new Articulo[10];
-    // public Articulo[] creaArray() {
-    // Articulo[] articulos = new Articulo[10];
-    // return articulos;
-    // }
+    Articulo[] articulos;
+
+    public CarritoCompra() {
+        articulos = new Articulo[10];
+    }
 
     public void guardarArticulo(Articulo art) {
         for (int i = 0; i < articulos.length; i++) {

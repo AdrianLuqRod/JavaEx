@@ -4,19 +4,6 @@ import java.util.Scanner;
 
 import e44.Articulo;
 
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
-// !!!!!!!!!!!PREGUNTAR MARIO
 public class PruebaCarritoCompra {
     public static void main(String[] args) {
         CarritoCompra cc = new CarritoCompra();
