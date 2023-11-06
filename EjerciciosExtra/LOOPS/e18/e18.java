@@ -168,11 +168,21 @@ public class e18 {
                 }
                 System.out.println();
             } else {
-                for (int j = 5; j > input; j--) {
-                    if ((input / 2.0) + 0.5) < j|| j >((input / 2.0) + 0.5)){
-                        System.out.printf("*");
-                    } else {
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                // !PREGUNTAR MARIO
+                for (int j = input; j > 0; j--) {
+                    if (((input / 2.0) + 0.5) - 1 - i * -1 > j || /* ((input / 2.0) + 0.5) + 1 + i < j) */ true) {
                         System.out.printf("-");
+                    } else {
+                        System.out.printf("*");
                     }
                 }
                 System.out.println();
@@ -180,8 +190,6 @@ public class e18 {
         }
     }
 }
-
-// SI J <= i-centro || j >
 
 // i=3 j tiene que ser <=5 o >=5
 // i=4 j tiene que ser <=3 o >=3
