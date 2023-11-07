@@ -12,9 +12,8 @@ public class CarritoCompra {
 
     public void guardarArticulo(Articulo art) {
         if (numElem == articulos.length) {
-
+            System.out.println("El carrito ya está lleno.");
         } else {
-
             for (int i = 0; i < articulos.length; i++) {
                 if (articulos[i] == null) {
                     articulos[i] = art;
