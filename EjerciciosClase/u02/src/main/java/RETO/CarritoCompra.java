@@ -3,17 +3,24 @@ package RETO;
 import e44.Articulo;
 
 public class CarritoCompra {
-    Articulo[] articulos;
+    public Articulo[] articulos;
+    public int numElem;
 
     public CarritoCompra() {
         articulos = new Articulo[10];
     }
 
     public void guardarArticulo(Articulo art) {
-        for (int i = 0; i < articulos.length; i++) {
-            if (articulos[i] == null) {
-                articulos[i] = art;
-                break;
+        if (numElem == articulos.length) {
+
+        } else {
+
+            for (int i = 0; i < articulos.length; i++) {
+                if (articulos[i] == null) {
+                    articulos[i] = art;
+                    numElem++;
+                    break;
+                }
             }
         }
     }
@@ -28,7 +35,7 @@ public class CarritoCompra {
             }
         }
         if (!exist) {
-            System.out.println("No hay articulos en el articulos");
+            System.out.println("No hay articulos en el carrito");
         }
     }
 
