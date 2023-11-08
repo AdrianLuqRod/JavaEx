@@ -11,7 +11,7 @@ public class PruebaArrayPersona {
             person[i].setRol(rol[i]);
         }
         for (int i = 0; i < person.length; i++) {
-            System.out.println("La posición " + (i + 1) + " la ocupa el/la " + person[i].getRol() + " con "
+            System.out.println("La posición " + i + " la ocupa el/la " + person[i].getRol() + " con "
                     + person[i].getEdad() + " años");
         }
         // - El hijo 'se va'
