@@ -9,10 +9,10 @@ public class ArrayNumeros {
             Random r = new Random();
             numeros[i] = r.nextInt(1001);
         }
-        for (int j : numeros) {
-            int modJ = j % 2;
-            if (modJ == 0 && j >= 800) {
-                System.out.println(j);
+        for (int i : numeros) {
+            int modI = i % 2;
+            if (modI == 0 && i >= 800) {
+                System.out.println(i);
             }
         }
     }
