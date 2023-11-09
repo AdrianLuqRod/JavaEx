@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TopPerros {
     public static void main(String[] args) {
-        boolean cond = false;
+        boolean flag = false;
         Scanner sc = new Scanner(System.in);
         String[] dogs = { "Tobby", "Rocky", "Filete", "Perruedines", "Torrija" };
         System.out.printf("Write the name of a dog:");
@@ -13,10 +13,11 @@ public class TopPerros {
             if (dogs[i].equalsIgnoreCase(name)) {
                 System.out.println(
                         "El nombre " + name + " ocupa el puesto " + (i + 1) + " del TOP 5 de nombres de perros");
-                cond = true;
+                flag = true;
+                break;
             }
         }
-        if (!cond) {
+        if (!flag) {
             System.out.println("El nombre " + name + " no está en el TOP 5 de nombres de perros");
         }
         sc.close();
