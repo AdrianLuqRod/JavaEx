@@ -6,6 +6,7 @@ public class CarritoCompra {
     public Articulo[] articulos;
     public int numElem;
 
+    // ? Se inicializa el array creado en el constructor.
     public CarritoCompra() {
         articulos = new Articulo[10];
     }
@@ -19,6 +20,7 @@ public class CarritoCompra {
             for (int i = 0; i < articulos.length; i++) {
                 if (articulos[i] == null) {
                     articulos[i] = art;
+                    articulos[i].setIdArticulo(i);
                     numElem++;
                     break;
                 }
@@ -31,7 +33,7 @@ public class CarritoCompra {
         for (Articulo elemArticulo : articulos) {
             // ? Si en el elemento hay algo, se obtiene las propiedades del articulo.
             if (elemArticulo != null) {
-                System.out.printf("Id = %d\nnombre = %s\nPrecio = %.2f", elemArticulo.getIdArticulo(),
+                System.out.printf("Id = %d\nnombre = %s\nPrecio = %.2f€\n", elemArticulo.getIdArticulo(),
                         elemArticulo.getNombre(), elemArticulo.getPrecio());
                 exist = true;
             }
@@ -50,15 +52,15 @@ public class CarritoCompra {
     // . }
     // . }
 
-    public String buscarArticuloPorId(int id) {
+    public Articulo buscarArticuloPorId(int id) {
         for (Articulo elemArticulos : articulos) {
-            // ? Si el ID introducido coincide con el ID de algun elemento del array, se
-            // ? devuelve el nombre del articulo.
+            // ? Si algun ID coincide con el introducido, se devuelve el nombre del articulo
+            // ? en cuestion.
             if (elemArticulos != null && elemArticulos.getIdArticulo() == id) {
-                return elemArticulos.getNombre();
+                return elemArticulos;
             }
         }
-        return "Articulo no encontrado.";
+        return null;
     }
 
     public double calcularPrecioTotalarticulos() {

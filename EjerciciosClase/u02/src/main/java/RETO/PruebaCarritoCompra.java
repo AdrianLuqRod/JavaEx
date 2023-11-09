@@ -22,12 +22,13 @@ public class PruebaCarritoCompra {
             switch (op) {
                 case 1:
                     Articulo art = new Articulo();
-                    System.out.println("Cual es el nombre del articulo");
+                    System.out.printf("Pon el nombre del articulo: ");
                     art.setNombre(sc.nextLine());
-                    System.out.println("Cual es el ID del articulo");
-                    art.setIdArticulo(sc.nextInt());
-                    sc.nextLine();
-                    System.out.println("Cual es el precio del articulo");
+                    // ? Codigo para poner manualmente el ID de un articulo.
+                    // . System.out.println("Cual es el ID del articulo");
+                    // . art.setIdArticulo(sc.nextInt());
+                    // . sc.nextLine();
+                    System.out.printf("Pon el precio del articulo: ");
                     art.setPrecio(sc.nextDouble());
                     sc.nextLine();
                     cc.guardarArticulo(art);
@@ -44,13 +45,15 @@ public class PruebaCarritoCompra {
                     if (buscado == null) {
                         System.out.println("No hay ningun articulo con ese ID.");
                     } else {
-                        System.out.println("ID articulo: " + buscado.getIdArticulo() + ", Nombre: "
-                                + buscado.getNombre() + ", precio: " + buscado.getPrecio());
+                        System.out.println(
+                                "Articulo encontrado: " + buscado.getNombre() + "\nPrecio: " + buscado.getPrecio()
+                                        + "€");
                     }
                     break;
 
                 case 4:
-                    System.out.println("El precio total es: " + cc.calcularPrecioTotalarticulos() + " €");
+                    double total = +cc.calcularPrecioTotalarticulos();
+                    System.out.printf("El precio total es:%.2f€\n", total);
                     break;
 
                 case 5:
