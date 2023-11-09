@@ -1,17 +1,5 @@
 package e40;
 
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
-// !!!!!!!!!!!!!! PRGUNTAR PROFE SOBRE MAS ARRAYS !!!
 public class PruebaTraduccion {
     public static void main(String[] args) {
         Traduccion[] translations = new Traduccion[5];
