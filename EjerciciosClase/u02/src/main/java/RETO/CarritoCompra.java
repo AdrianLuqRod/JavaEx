@@ -42,6 +42,7 @@ public class CarritoCompra {
             System.out.println("No hay articulos en el carrito");
         }
     }
+
     // - También se puede hacer con un 'forI'
     // . for (int i = 0; i < articulos.length; i++) {
     // . if (articulos[i] != null) {
@@ -51,7 +52,7 @@ public class CarritoCompra {
     // . exist = true;
     // . }
     // . }
-
+    // hola ke tal
     public Articulo buscarArticuloPorId(int id) {
         for (Articulo elemArticulos : articulos) {
             // ? Si algun ID coincide con el introducido, se devuelve el nombre del articulo

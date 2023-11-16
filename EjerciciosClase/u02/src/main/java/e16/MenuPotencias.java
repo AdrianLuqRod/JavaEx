@@ -37,3 +37,4 @@ public class MenuPotencias {
         sc.close();
     }
 }
+// hola
