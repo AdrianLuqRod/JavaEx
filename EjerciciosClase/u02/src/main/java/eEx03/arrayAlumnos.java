@@ -7,7 +7,7 @@ public class arrayAlumnos {
     public static void main(String[] args) {
         // ? Se crean las variables necesarias para almacenar datos.
         int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
-        int minPos = 0, maxPos = 0, media = 0;
+        int minPos = -1, maxPos = -1, media = 0;
         Random r = new Random();
         Scanner sc = new Scanner(System.in);
         System.out.printf("Introduce el numero de alumnos que quieres en la clase: ");
