@@ -52,7 +52,6 @@ public class CarritoCompra {
     // . exist = true;
     // . }
     // . }
-    // hola ke tal
     public Articulo buscarArticuloPorId(int id) {
         for (Articulo elemArticulos : articulos) {
             // ? Si algun ID coincide con el introducido, se devuelve el nombre del articulo
