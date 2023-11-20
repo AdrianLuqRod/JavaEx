@@ -6,6 +6,7 @@ public class PosesionBalon {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int op;
+        boolean supera = false;
         int[] tiempoPosesion = { 180, 120, 90, 180, 120, 120, 120, 240, 78, 270, 180, 120, 120, 180, 204, 420, 360, 420,
                 480, 300, 120, 180, 600, 258 };
         do {
@@ -78,7 +79,7 @@ public class PosesionBalon {
                     break;
 
                 case 4:
-                    boolean supera = false;
+                    supera = false;
                     System.out.printf("Dime el numero de segundos de posesion:");
                     int num = sc.nextInt();
                     sc.nextLine();
@@ -101,7 +102,7 @@ public class PosesionBalon {
                     break;
 
                 case 5:
-                    boolean supera2 = false;
+                    supera = false;
                     System.out.printf("Dime el numero de segundos de posesion:");
                     int num2 = sc.nextInt();
                     sc.nextLine();
@@ -109,14 +110,14 @@ public class PosesionBalon {
                     for (int i = 0; i < tiempoPosesion.length; i++) {
                         if (num2 > tiempoPosesion[i] && i % 2 == 0) {
                             System.out.println("-Equipo local con " + tiempoPosesion[i] + " segundos");
-                            supera2 = true;
+                            supera = true;
 
                         } else if (num2 > tiempoPosesion[i] && i % 2 != 0) {
                             System.out.println("-Equipo visitante con " + tiempoPosesion[i] + " segundos");
-                            supera2 = true;
+                            supera = true;
                         }
                     }
-                    if (!supera2) {
+                    if (!supera) {
                         System.err.println("Las posesiones que superan los " + num2 + " segundos son:");
                     }
                     break;
