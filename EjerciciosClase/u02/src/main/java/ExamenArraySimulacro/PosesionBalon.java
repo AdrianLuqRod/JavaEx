@@ -127,7 +127,7 @@ public class PosesionBalon {
                     break;
 
                 default:
-                    System.out.printf("Opcion incorrecta, elige de nuevo:");
+                    System.out.println("Opcion incorrecta, elige de nuevo:");
                     break;
             }
         } while (op != 0);
