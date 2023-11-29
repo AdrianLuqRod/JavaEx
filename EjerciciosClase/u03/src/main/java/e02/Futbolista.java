@@ -13,12 +13,17 @@ public class Futbolista {
     }
 
     public void marcaGol() {
+        if (lesionado) {
+            System.out.println("Jugador lesionado, no se puede marcar gol");
+        }
         numGoles++;
     }
 
     public void marcaGol(int numGoles) {
         if (numGoles <= 0) {
             System.out.println("No se pueden marcar goles negativos o 0 goles.");
+        } else if (lesionado) {
+            System.out.println("Jugador lesionado, no se puede marcar gol");
         } else {
             this.numGoles += numGoles;
         }
