@@ -1,26 +1,17 @@
-package e02;
+package e04;
 
-<<<<<<< HEAD
-//. package es.carca.futbol.jugadores
-
-public class Futbolista {
-    private String nombre, apellidos;
-=======
-public class Futbolista {
+public class FutbolistaAsserts {
     private String nombre;
     private String apellidos;
->>>>>>> d1dfcd335665d24d5e0621a6325bcb4e8f018d60
     private int numGoles;
     private double salario;
     private boolean lesionado;
 
-    public Futbolista(String nombre, String apellidos) {
+    public FutbolistaAsserts(String nombre, String apellidos) {
         this.nombre = nombre;
         this.apellidos = apellidos;
     }
 
-<<<<<<< HEAD
-=======
     public void marcaGol() {
         if (lesionado) {
             System.out.println("Jugador lesionado, no se puede marcar gol");
@@ -54,7 +45,6 @@ public class Futbolista {
         }
     }
 
->>>>>>> d1dfcd335665d24d5e0621a6325bcb4e8f018d60
     public String getNombre() {
         return nombre;
     }
@@ -76,10 +66,6 @@ public class Futbolista {
     }
 
     public void setNumGoles(int numGoles) {
-<<<<<<< HEAD
-        assert (numGoles > 0 && !lesionado);
-=======
->>>>>>> d1dfcd335665d24d5e0621a6325bcb4e8f018d60
         this.numGoles = numGoles;
     }
 
@@ -88,16 +74,11 @@ public class Futbolista {
     }
 
     public void setSalario(double salario) {
-<<<<<<< HEAD
-        assert !(salario < 0) : "nose que pasa";
-        this.salario = salario;
-=======
         if (salario <= 0) {
             System.out.println("El salario no puede ser menor a 0");
         } else {
             this.salario = salario;
         }
->>>>>>> d1dfcd335665d24d5e0621a6325bcb4e8f018d60
     }
 
     public boolean isLesionado() {
@@ -105,34 +86,10 @@ public class Futbolista {
     }
 
     public void setLesionado(boolean lesionado) {
-<<<<<<< HEAD
-        this.lesionado = lesionado;
-    }
-
-    public void marcaGol() {
-        assert (!lesionado);
-        numGoles++;
-    }
-
-    public void marcaGol(int numGoles) {
-        assert (!lesionado && numGoles > 0);
-        this.numGoles += numGoles;
-    }
-
-    public void golAnulado() {
-        assert (!lesionado && numGoles > 0);
-        numGoles--;
-    }
-
-    public void golAnulado(int numGoles) {
-        assert (!lesionado && this.numGoles > numGoles && this.numGoles > 0);
-        this.numGoles -= numGoles;
-=======
         if (this.lesionado != lesionado) {
             this.lesionado = lesionado;
         } else {
             System.out.println("No se puede hacer eso.");
         }
->>>>>>> d1dfcd335665d24d5e0621a6325bcb4e8f018d60
     }
 }
