@@ -5,6 +5,11 @@ public class Persona {
     private String dni;
     private Vehiculo coche;
 
+    @Override
+    public String toString() {
+        return "Persona [nombre=" + nombre + ", dni=" + dni + "]";
+    }
+
     public Persona() {
     }
 
