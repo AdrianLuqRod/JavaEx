@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "PruebaPersonaCoche",
+      "request": "launch",
+      "mainClass": "e01.PruebaPersonaCoche",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
+      "name": "MenuFutbolista",
+      "request": "launch",
+      "mainClass": "e08.MenuFutbolista",
+      "projectName": "u03"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${file}"
+    }
+  ]
+}

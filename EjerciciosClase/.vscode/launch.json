@@ -1,0 +1,57 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "PruebaConjuntoPersona",
+      "request": "launch",
+      "mainClass": "Extra.PruebaConjuntoPersona",
+      "projectName": "u03"
+    },
+    {
+      "type": "java",
+      "name": "FutbolistaMenu",
+      "request": "launch",
+      "mainClass": "e08.FutbolistaMenu",
+      "projectName": "u03",
+      "vmArgs": "-ea"
+    },
+    {
+      "type": "java",
+      "name": "ComparandoBusquedas",
+      "request": "launch",
+      "mainClass": "e07.ComparandoBusquedas",
+      "projectName": "u03",
+      "vmArgs": "-ea"
+    },
+    {
+      "type": "java",
+      "name": "Ciudades",
+      "request": "launch",
+      "mainClass": "e06.Ciudades",
+      "projectName": "u03",
+      "vmArgs": "-ea"
+    },
+    {
+      "type": "java",
+      "name": "OrdenarArrays",
+      "request": "launch",
+      "mainClass": "e05.OrdenarArrays",
+      "projectName": "u03",
+      "vmArgs": "-ea"
+    },
+    {
+      "type": "java",
+      "name": "PruebaOrdenadorAsertos",
+      "request": "launch",
+      "mainClass": "e03.PruebaOrdenadorAsertos",
+      "projectName": "u03",
+      "vmArgs": "-ea"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${file}"
+    }
+  ]
+}
