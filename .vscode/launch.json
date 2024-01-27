@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaMain",
+      "request": "launch",
+      "mainClass": "e05.PruebaMain",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
+      "name": "PruebaMain",
+      "request": "launch",
+      "mainClass": "e04.PruebaMain",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
       "name": "Prueba",
       "request": "launch",
       "mainClass": "e02.Prueba",
