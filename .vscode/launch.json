@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Prueba",
+      "request": "launch",
+      "mainClass": "e02.Prueba",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
       "name": "PruebaPersonaCoche",
       "request": "launch",
       "mainClass": "e01.PruebaPersonaCoche",
