@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaDispositivo",
+      "request": "launch",
+      "mainClass": "e07.PruebaDispositivo",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
+      "name": "PruebaMamiferos",
+      "request": "launch",
+      "mainClass": "e06.PruebaMamiferos",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
       "name": "PruebaMain",
       "request": "launch",
       "mainClass": "e05.PruebaMain",
