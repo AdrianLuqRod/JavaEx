@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaImpresoras",
+      "request": "launch",
+      "mainClass": "exE01.PruebaImpresoras",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
       "name": "PruebaDispositivo",
       "request": "launch",
       "mainClass": "e07.PruebaDispositivo",
