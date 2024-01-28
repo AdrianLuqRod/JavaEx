@@ -26,7 +26,6 @@ public class MemoriaRAM extends Dispositivo {
     }
 
     public void modificarPosicion(int pos, int newValue) {
-
         if (isEncendido()) {
             if (pos >= 0 && pos < TAM) {
                 opEscritura++;
