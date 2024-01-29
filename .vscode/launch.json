@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaDocumentoTexto",
+      "request": "launch",
+      "mainClass": "e14.PruebaDocumentoTexto",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
       "name": "PruebaImpresoras",
       "request": "launch",
       "mainClass": "exE01.PruebaImpresoras",
