@@ -1,12 +1,11 @@
 package exE02;
 
 public class CajaCarton implements Almacenable {
-    public final int TAM = 100;
-    private int estanteria[] = new int[TAM];
-    private int codigo;
+    private int codigo, estanteria;
     private double anchura, altura, profundidad;
 
-    public CajaCarton(double anchura, double altura, double profundidad) {
+    public CajaCarton(int codigo, double anchura, double altura, double profundidad) {
+        this.codigo = codigo;
         this.anchura = anchura;
         this.altura = altura;
         this.profundidad = profundidad;
@@ -17,7 +16,7 @@ public class CajaCarton implements Almacenable {
     }
 
     public double calculaVolumen() {
-        return anchura * profundidad;
+        return anchura * profundidad * altura;
     }
 
     public double getAltura() {
@@ -33,14 +32,15 @@ public class CajaCarton implements Almacenable {
     }
 
     public void almacena(int numEstanteria) {
-
-        System.out.println("Se ha almacenado la caja con codigo " + codigo + " en la estanteria " + numEstanteria);
+        estanteria = numEstanteria;
+        System.out.println("Se ha almacenado la caja con codigo " + codigo + " en la estanteria " + localiza());
     }
 
     public int localiza() {
-        return 1;
+        return estanteria;
     }
 
     public void retira() {
+        estanteria = 0;
     }
 }
