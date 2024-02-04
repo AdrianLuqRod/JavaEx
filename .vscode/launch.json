@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaAlmacenable",
+      "request": "launch",
+      "mainClass": "awrawra.PruebaAlmacenable",
+      "projectName": "u04"
+    },
+    {
+      "type": "java",
       "name": "PruebaDocumentoTexto",
       "request": "launch",
       "mainClass": "e14.PruebaDocumentoTexto",
