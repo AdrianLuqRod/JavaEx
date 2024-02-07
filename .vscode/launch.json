@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FiltrandoLists",
+      "request": "launch",
+      "mainClass": "e06.FiltrandoLists",
+      "projectName": "u05"
+    },
+    {
+      "type": "java",
+      "name": "ManipulandoCadenas",
+      "request": "launch",
+      "mainClass": "e05.ManipulandoCadenas",
+      "projectName": "u05"
+    },
+    {
+      "type": "java",
+      "name": "NombreDePerros",
+      "request": "launch",
+      "mainClass": "e04.NombreDePerros",
+      "projectName": "u05"
+    },
+    {
+      "type": "java",
       "name": "PruebaAlmacenable",
       "request": "launch",
       "mainClass": "awrawra.PruebaAlmacenable",
