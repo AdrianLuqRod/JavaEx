@@ -1,4 +1,4 @@
-package u07;
+package e09;
 
 public class Persona implements Comparable {
     private String nombre, dni;
@@ -42,7 +42,11 @@ public class Persona implements Comparable {
     @Override
     public int compareTo(Object obj) {
         Persona p = (Persona) obj;
-        return this.edad - p.edad;
-    }
+        int resul = nombre.compareTo(p.getNombre());
+        if (resul == 0) {
+            resul = this.edad - p.getEdad();
+        }
+        return resul;
 
+    }
 }

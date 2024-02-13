@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class NombreDePerros {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String nombreTexto = "";
+        String nombreTexto;
         List nombres = new ArrayList();
         nombres.add("Toby");
         nombres.add("Rocky");
