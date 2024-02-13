@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaSubvencion",
+      "request": "launch",
+      "mainClass": "simulacroEX.PruebaSubvencion",
+      "projectName": "u05"
+    },
+    {
+      "type": "java",
       "name": "MapaHabitaciones",
       "request": "launch",
       "mainClass": "e18.MapaHabitaciones",
