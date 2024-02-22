@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaCamion",
+      "request": "launch",
+      "mainClass": "e22.PruebaCamion",
+      "projectName": "u05"
+    },
+    {
+      "type": "java",
+      "name": "PruebaFunda",
+      "request": "launch",
+      "mainClass": "e21.PruebaFunda",
+      "projectName": "u05"
+    },
+    {
+      "type": "java",
       "name": "PruebaConcesionario",
       "request": "launch",
       "mainClass": "e20.PruebaConcesionario",
