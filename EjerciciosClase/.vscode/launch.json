@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaNombresUnicos",
+      "request": "launch",
+      "mainClass": "e03.PruebaNombresUnicos",
+      "projectName": "u06"
+    },
+    {
+      "type": "java",
+      "name": "PruebaColaPacientes",
+      "request": "launch",
+      "mainClass": "e02.PruebaColaPacientes",
+      "projectName": "u06"
+    },
+    {
+      "type": "java",
+      "name": "PruebaNombresUnicos",
+      "request": "launch",
+      "mainClass": "e01.PruebaNombresUnicos",
+      "projectName": "u06"
+    },
+    {
+      "type": "java",
       "name": "PruebaSubvencion",
       "request": "launch",
       "mainClass": "simulacroEX.PruebaSubvencion",
