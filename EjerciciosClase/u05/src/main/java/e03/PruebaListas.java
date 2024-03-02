@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class PruebaListas {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
         List meses = new ArrayList();
         meses.add("Enero");
