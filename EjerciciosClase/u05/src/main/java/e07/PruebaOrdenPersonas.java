@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class PruebaOrdenPersonas {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
         List personas = new ArrayList();
         Persona p1 = new Persona("Pepe", "12345678Z", 20);

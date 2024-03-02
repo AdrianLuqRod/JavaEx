@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ManipulandoCadenas {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main(String[] args) {
         List cadenas = new ArrayList();
         cadenas = Arrays.asList("Vertical", "Horizontal", "Izquierda", "Derecha", "Adelante", "Atras", "Curvo", "Recto",

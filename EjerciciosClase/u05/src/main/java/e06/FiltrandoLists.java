@@ -1,12 +1,12 @@
 package e06;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 public class FiltrandoLists {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
         List filtros = new ArrayList();
         filtros.add("Vertical");
