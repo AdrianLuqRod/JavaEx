@@ -11,10 +11,15 @@ public class PruebaColaPacientes {
         cp.agregaPaciente(p2);
         cp.agregaPaciente(p3);
         cp.agregaPaciente(p4);
-        System.out.println("");
         while (!(cp.isColaVacia())) {
-            cp.vacunaSiguiente();
-            System.out.println("Vacunacion con exito.");
+            try {
+                System.out.println("");
+                cp.vacunaSiguiente();
+                System.out.println("Vacunacion con exito.");
+            } catch (PacienteVacunadoException e) {
+                System.out.println("Hay que estar aburrido para querer vacunarse dos veces");
+            }
         }
+        System.out.println("Todos los pacientes han sido vacunados con exito.");
     }
 }
