@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaCuentaCorriente",
+      "request": "launch",
+      "mainClass": "e10.PruebaCuentaCorriente",
+      "projectName": "u06"
+    },
+    {
+      "type": "java",
+      "name": "PruebaBombilla",
+      "request": "launch",
+      "mainClass": "e09.PruebaBombilla",
+      "projectName": "u06"
+    },
+    {
+      "type": "java",
+      "name": "PruebaApartamento",
+      "request": "launch",
+      "mainClass": "e08.PruebaApartamento",
+      "projectName": "u06"
+    },
+    {
+      "type": "java",
       "name": "PruebaApartamento",
       "request": "launch",
       "mainClass": "e07.PruebaApartamento",
