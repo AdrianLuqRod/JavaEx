@@ -1,9 +1,7 @@
-package e03;
+package e04;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import e01.NombreDuplicadoException;
 
 public class NombresUnicos {
     private List<String> lista;

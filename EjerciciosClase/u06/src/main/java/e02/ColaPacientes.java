@@ -14,7 +14,7 @@ public class ColaPacientes {
         cola.add(p);
     }
 
-    public void vacunaSiguiente() throws Exception {
+    public void vacunaSiguiente() throws PacienteVacunadoException {
         cola.remove(0).vacunar();
     }
 

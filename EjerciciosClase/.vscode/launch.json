@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaNombresUnicos",
+      "request": "launch",
+      "mainClass": "e04.PruebaNombresUnicos",
+      "projectName": "u06"
+    },
+    {
+      "type": "java",
       "name": "PruebaCuentaCorriente",
       "request": "launch",
       "mainClass": "e10.PruebaCuentaCorriente",

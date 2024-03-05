@@ -13,10 +13,11 @@ public class Paciente {
         return vacunado;
     }
 
-    public void vacunar() throws Exception {
+    public void vacunar() throws PacienteVacunadoException {
         if (vacunado) {
             throw new PacienteVacunadoException();
         }
         vacunado = true;
     }
+
 }

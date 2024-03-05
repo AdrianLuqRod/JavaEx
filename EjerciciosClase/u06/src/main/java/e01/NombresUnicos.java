@@ -11,18 +11,16 @@ public class NombresUnicos {
     }
 
     public void agregaNombre(String nombre) throws NombreDuplicadoException {
-        if (yaExiste(nombre)) {
-            throw new NombreDuplicadoException();
-        }
-        lista.add(nombre);
-    }
-
-    public boolean yaExiste(String nombre) {
-        for (String str : lista) {
-            if (str.equalsIgnoreCase(nombre)) {
-                return true;
+        boolean flag = false;
+        for (String nom : lista) {
+            if (nom.equalsIgnoreCase(nombre)) {
+                flag = true;
             }
         }
-        return false;
+        if (flag) {
+            throw new NombreDuplicadoException();
+        } else {
+            lista.add(nombre);
+        }
     }
 }
