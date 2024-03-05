@@ -1,39 +1,45 @@
 package e10;
 
 public class CuentaCorriente {
-    private double saldoActual;
+    private double saldo;
     private int pin;
 
-    public CuentaCorriente(double saldoActual, int pin) throws DatosCuentaInvalidosException {
-        if (saldoActual < 0 || pin < 0 && pin > 9999) {
-            throw new DatosCuentaInvalidosException("El saldo o el pin tienen unos valores incorrectos.");
+    public CuentaCorriente(double saldo, int pin) throws DatosCuentaInvalidosException {
+        if (saldo < 0) {
+            throw new DatosCuentaInvalidosException("Saldo incohernte");
         }
-        this.saldoActual = saldoActual;
+        if (pin < 0 || pin > 9999) {
+            throw new DatosCuentaInvalidosException("Pin incoherente");
+        }
+        this.saldo = saldo;
         this.pin = pin;
     }
 
     public double consultaSaldo() {
-        return saldoActual;
+        return saldo;
     }
 
     public void ingresa(double importe, int pin) throws PinIncorrectoException, ImporteIncorrectoException {
         if (pin != this.pin) {
-            throw new PinIncorrectoException("El pin no coincide.");
+            throw new PinIncorrectoException("El pin no coincide");
         }
         if (importe <= 0) {
-            throw new ImporteIncorrectoException("Importe no valido: " + importe);
+            throw new ImporteIncorrectoException("El importe es incoherente");
         }
-        saldoActual += importe;
+        this.saldo += importe;
     }
 
-    public void abona(double importe, int pin) throws ImporteIncorrectoException, PinIncorrectoException {
+    public void abona(double importe, int pin) throws PinIncorrectoException, ImporteIncorrectoException {
         if (pin != this.pin) {
-            throw new PinIncorrectoException("El pin no coincide.");
+            throw new PinIncorrectoException("El pin no coincide");
         }
         if (importe <= 0) {
-            throw new ImporteIncorrectoException("Importe no valido: " + importe);
+            throw new ImporteIncorrectoException("El importe es incoherente");
         }
-        saldoActual -= importe;
+        if (importe > this.saldo) {
+            this.saldo = 0;
+        } else {
+            this.saldo -= importe;
+        }
     }
-
 }

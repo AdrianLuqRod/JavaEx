@@ -2,99 +2,69 @@ package e10;
 
 import java.util.Scanner;
 
-public class PruebaCuentaCorriente {
-    static CuentaCorriente cc1;
-    static Scanner sc = new Scanner(System.in);
+//? El modificador static permite acceder a las variables y métodos aunque no tengamos una instancia del objeto que los contiene.
 
-    public static void main(String[] args) throws DatosCuentaInvalidosException {
+public class PruebaCuentaCorriente {
+    static CuentaCorriente cc;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int op;
         boolean flag = false;
-        int op = 0;
         do {
             System.out.println("0-SALIR");
             System.out.println("1-Conectar con tu cuenta");
             System.out.println("2-Consultar saldo");
             System.out.println("3-Ingresar dinero");
             System.out.println("4-Abonar una compra");
-            System.out.println("Elige una opcion: ");
+            System.out.println("Elige una opcion");
             op = sc.nextInt();
-
-            switch (op) {
-                case 0:
-                    System.out.println("Adioooos.");
-                    break;
-
-                case 1:
-                    conectarCuenta();
-                    flag = true;
-                    break;
-
-                case 2:
-                    if (!flag) {
-                        System.out.println("Primero debes conectar tu cuenta");
+            try {
+                switch (op) {
+                    case 0:
+                        System.out.println("Aaaadios.");
                         break;
-                    }
-                    consultarSaldo();
-                    break;
-
-                case 3:
-                    if (!flag) {
-                        System.out.println("Primero debes conectar tu cuenta");
+                    case 1:
+                        flag = true;
+                        cc = new CuentaCorriente(1000, 1234);
                         break;
-                    }
-                    ingresaDinero();
-                    break;
-
-                case 4:
-                    if (!flag) {
-                        System.out.println("Primero debes conectar tu cuenta");
+                    case 2:
+                        if (!flag) {
+                            System.out.println("Tienes que conectar primero tu cuenta");
+                        } else {
+                            System.out.println(cc.consultaSaldo());
+                        }
                         break;
-                    }
-                    abonarCompra();
-                    break;
+                    case 3:
+                        if (!flag) {
+                            System.out.println("Tienes que conectar primero tu cuenta");
+                        } else {
+                            System.out.println("Introduce el dinero que quieres ingresar: ");
+                            double importe = sc.nextDouble();
+                            System.out.println("Introduce el PIN de la cuenta: ");
+                            int pin = sc.nextInt();
+                            cc.ingresa(importe, pin);
+                        }
+                        break;
+                    case 4:
+                        if (!flag) {
+                            System.out.println("Tienes que conectar primero tu cuenta");
+                        } else {
+                            System.out.println("Introduce el dinero que quieres ingresar: ");
+                            double importe = sc.nextDouble();
+                            System.out.println("Introduce el PIN de la cuenta: ");
+                            int pin = sc.nextInt();
+                            cc.abona(importe, pin);
+                        }
+                        break;
+                    default:
+                        System.out.println("Opcion incorrecta");
+                        break;
+                }
 
-                default:
-                    System.out.println("Opcion no valida.");
-                    break;
+            } catch (DatosCuentaInvalidosException | PinIncorrectoException | ImporteIncorrectoException e) {
+                System.out.println(e);
             }
         } while (op != 0);
-    }
-
-    private static void conectarCuenta() {
-        try {
-            cc1 = new CuentaCorriente(1000, 1234);
-            System.out.println("Cuenta conectada con exito");
-            System.out.println("");
-        } catch (DatosCuentaInvalidosException e) {
-            System.out.println(e);
-        }
-
-    }
-
-    private static void consultarSaldo() {
-        System.out.println(cc1.consultaSaldo());
-    }
-
-    private static void ingresaDinero() {
-        System.out.println("Introduce el importe: ");
-        double imp = sc.nextDouble();
-        System.out.println("Introduce el pin de la cuenta: ");
-        int pin = sc.nextInt();
-        try {
-            cc1.ingresa(imp, pin);
-        } catch (PinIncorrectoException | ImporteIncorrectoException e) {
-            System.out.println(e);
-        }
-    }
-
-    private static void abonarCompra() {
-        System.out.println("Introduce el importe: ");
-        double imp = sc.nextDouble();
-        System.out.println("Introduce el pin de la cuenta: ");
-        int pin = sc.nextInt();
-        try {
-            cc1.abona(imp, pin);
-        } catch (ImporteIncorrectoException | PinIncorrectoException e) {
-            System.out.println(e);
-        }
     }
 }
