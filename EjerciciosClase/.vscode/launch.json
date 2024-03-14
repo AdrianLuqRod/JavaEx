@@ -2,6 +2,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PruebaCustomerAccessData",
+      "request": "launch",
+      "mainClass": "e08.PruebaCustomerAccessData",
+      "projectName": "u08"
+    },
+    {
+      "type": "java",
+      "name": "PruebaDelete",
+      "request": "launch",
+      "mainClass": "e06.PruebaDelete",
+      "projectName": "u08"
+    },
+    {
+      "type": "java",
+      "name": "PruebaUpdate",
+      "request": "launch",
+      "mainClass": "e05.PruebaUpdate",
+      "projectName": "u08"
+    },
+    {
+      "type": "java",
+      "name": "Consulta",
+      "request": "launch",
+      "mainClass": "e03.Consulta",
+      "projectName": "u08"
+    },
+    {
+      "type": "java",
+      "name": "Consulta",
+      "request": "launch",
+      "mainClass": "e02.Consulta",
+      "projectName": "u08"
+    },
+    {
+      "type": "java",
+      "name": "Consulta",
+      "request": "launch",
+      "mainClass": "e01.Consulta",
+      "projectName": "u08"
+    },
+    {
+      "type": "java",
+      "name": "DBUtils",
+      "request": "launch",
+      "mainClass": "e01.DBUtils",
+      "projectName": "u08"
+    },
+    {
+      "type": "java",
       "name": "FerreteriaApp",
       "request": "launch",
       "mainClass": "examenSimulacro.FerreteriaApp",
